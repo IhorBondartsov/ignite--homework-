@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div><h2>Полифилл #1 (рекурсивный метод)</h2>
+
+    <p class = "code">(function(ELEMENT) {
+        <br> ELEMENT.matches = ELEMENT.matches || ELEMENT.mozMatchesSelector || ELEMENT.msMatchesSelector ||
+        <br> ELEMENT.oMatchesSelector || ELEMENT.webkitMatchesSelector;
+        <br> ELEMENT.closest = ELEMENT.closest || function closest(selector) {
+        <br> if (!this) return null;
+        <br> if (this.matches(selector)) return this;
+        <br> if (!this.parentElement) {return null}
+        <br> else return this.parentElement.closest(selector)
+        <br> };
+        <br> }(Element.prototype));</p>
+</div>
+<div><h2>Полифилл #2 (через цикл)</h2>
+
+    <p>
+        <br> (function(e){
+        <br> e.closest = e.closest || function(css){
+        <br> var node = this;
+        <br>
+        <br> while (node) {
+        <br> if (node.matches(css)) return node;
+        <br> else node = node.parentElement;
+        <br> }
+        <br> return null;
+        <br> }
+        <br> })(Element.prototype);
+    </p></div>
+
+<script>
+
+    (function(ELEMENT) {
+        ELEMENT.matches = ELEMENT.matches || ELEMENT.mozMatchesSelector || ELEMENT.msMatchesSelector || ELEMENT.oMatchesSelector || ELEMENT.webkitMatchesSelector;
+        ELEMENT.closest = ELEMENT.closest || function closest(selector) {
+                    if (!this) return null;
+                    if (this.matches(selector)) return this;
+                    if (!this.parentElement) {return null}
+                    else return this.parentElement.closest(selector)
+                };
+    }(Element.prototype));
+
+    var br = document.querySelector(".code");
+    console.log(br.closest("div"));
+
+</script>
+
+</body>
+</html>

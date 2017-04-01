@@ -42,5 +42,14 @@
         <td>5:5</td>
     </tr>
 </table>
+
+
+<script>
+
+    var arrayTR = document.getElementsByTagName("tr");
+    for(var i = 0; i < arrayTR.length; i++){
+        arrayTR[i].getElementsByTagName("td")[i].style.color = 'red';
+    }
+</script>
 </body>
 </html>

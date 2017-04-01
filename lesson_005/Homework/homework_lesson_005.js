@@ -36,18 +36,17 @@ var s2 = "13123123asd";
 console.log(regexp.test(s));
 console.log(regexp.test(s2));
 
-//Task 2
+//Task 2 - Переработать!!!
 
-function smartSum(arg) {
+function FsmartSum(arg) {
     var sum = arg
+
     function summ(b) {
-        console.log(arguments.toString());
         for (var i = 0; i < arguments.length; i++) {
             if (!isNaN(parseFloat(arguments[i])) && isFinite(arguments[i])) {
                 sum += arguments[i];
-               console.log("sadads  " + arguments[i]);
-            }else{
-                sum+=0;
+            } else {
+                sum += 0;
             }
         }
         return summ;
@@ -60,8 +59,22 @@ function smartSum(arg) {
     return summ;
 };
 
-var ctv = smartSum(0);
-//console.log(smartSum(3)) // 3;
-//console.log(smartSum(1, 2)) // 3;
-//console.log(smartSum(1, 3)(2)) // 6;
-console.log(ctv(1, 2)(3, 4, 5)(6)(7, 10)) // 38;
+var smartSum = FsmartSum(0);
+console.log(smartSum(3)) // 3;
+console.log(smartSum(1, 2)) // 3;
+console.log(smartSum(1, 3)(2)) // 6;
+console.log(smartSum(1, 2)(3, 4, 5)(6)(7, 10)) // 38;
+
+
+// Task 3
+
+function reversTimer(number) {
+    var timer = setInterval(function () {
+        console.log(number--)
+        if (number == -1) {
+            clearTimeout(timer);
+        }
+    }, 1000);
+};
+
+var timers = reversTimer(10);

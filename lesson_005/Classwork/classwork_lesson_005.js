@@ -10,6 +10,7 @@ function printNumber() {
     }, 100);
 };
 printNumber();
+
 //Task 2
 var leader = {
     name: "Василий Иванович",
@@ -19,6 +20,7 @@ userObj = JSON.stringify(leader);
 alert(userObj);
 userObj2 = JSON.parse(userObj);
 alert(userObj2);
+
 //Task 3
 function argum(something) {
     try {
