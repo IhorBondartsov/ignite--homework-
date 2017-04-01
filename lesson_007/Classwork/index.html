@@ -18,14 +18,57 @@
     </ul>
 </div>
 <script>
-    var doc = document.body;
+    // Create element span
+    var span = document.createElement("span");
+    span.innerText = 'Du....Du Hast....Du hast mich...';
+    //Create all elements in  body
+    var elems = document.body.querySelectorAll('*');
+
+    //Create special function when add new element in/before/after element
+    var timer = function (place, element, newElement) {
+        switch (place) {
+            case 1:
+                element.parentNode.insertBefore(newElement, element);
+                break;
+            case 2:
+                element.insertBefore(newElement, element.firstChild);
+                break;
+            case 3:
+                element.appendChild(newElement);
+                break;
+            case 4:
+                element.parentNode.insertBefore(newElement, element.nextSibling);
+                break;
+        }
+    };
 
 
-    var elems = document.getElementsByTagName('*');
+    //    for (var elem, i = 0; elem = elems[i++];) {
+    //        console.log("THIS" + elem.tagName + " " + (elem.tagName !== 'SCRIPT') + i);
+    //        if (elem.tagName !== 'SPAN' && elem.tagName !== 'SCRIPT' && elem !== null) {
+    //            for (var j = 1; j < 5; j++) {
+    //                var r = setTimeout(timer(j, elem, span), 400);
+    //            }
+    //        }
+    //    }
+    //    ;
 
-    for( var elem, i = 0; elem = elems[ i++ ]; ) {
+    var elemLen = elems.length;
+    var operation = 0;
 
-    }
+    setTimeout(function go() {
+        operation += 1;
+        if (operation == 5) {
+            elemLen -= 1;
+            operation = 1;
+        } else {
+            timer(operation, elems[elems.length - elemLen], span)
+        }
+        if (elemLen !== 0 && elems.tagName !== 'SPAN' && elems.tagName !== 'SCRIPT' && elems !== null) {
+            console.log(elemLen + " " + elems.tagName)
+            setTimeout(go, 400)
+        }
+    }, 400);
 
 
 </script>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+    var a = document.createElement("a");
+    document.body.appendChild(a);
+    a.innerHTML = "something";
+    a.style.position = "absolute";
+
+    var div = document.createElement("div");
+    div.style.backgroundColor = "red";
+    div.style.height = 100 + "px";
+    div.style.width = 100 + "px";
+    document.body.appendChild(div);
+
+    div.style.position = "absolute";
+
+    function positionAt(anchor, position, elem) {
+
+        var place = anchor.getBoundingClientRect();
+
+        switch (position) {
+            case "top":
+                elem.style.left = place.left + "px";
+                elem.style.top = place.top - elem.offsetHeight + "px";
+                break;
+
+            case "right":
+                elem.style.left = place.left + anchor.offsetWidth + "px";
+                elem.style.top = place.top + "px";
+                break;
+
+            case "bottom":
+                elem.style.left = place.left + "px";
+                elem.style.top = place.top + anchor.offsetHeight + "px";
+                break;
+        }
+
+    }
+positionAt(a,'right',div);
+
+
+</script>
+</body>
+</html>
