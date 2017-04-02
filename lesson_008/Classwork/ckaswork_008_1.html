@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            float: left;
+            background-color: palegreen;
+        }
+    </style>
+</head>
+
+<body>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<input type="button" value="Тыдыщ" id ="btn"/>
+
+<script>
+    //Есть трабла! работает на всех дивах. Что бы так не работало лучше брать дивы через класс но ТЗ есть ТЗ
+    var btn = document.getElementById('btn');
+    var divs = document.getElementsByTagName('div');
+
+    var count= 0;
+    btn.addEventListener("click", function(){
+
+        if(count!=0){
+            divs[count-1].style.backgroundColor = "palegreen";
+        }
+
+        if (count==divs.length){
+            divs[count-1].style.backgroundColor = "palegreen";
+            count = 0;
+        }
+        divs[count].style.backgroundColor = "red";
+        count++;
+    })
+</script>
+</body>
+</html>

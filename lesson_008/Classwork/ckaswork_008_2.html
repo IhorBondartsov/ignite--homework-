@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+<input type="text" id="specialText"/>
+<input type="button" value="write" id="btn"/>
+
+<div id="empty">
+
+</div>
+
+<script>
+    var div = document.getElementById("empty");
+    var btn = document.getElementById("btn");
+    var text = document.getElementById("specialText");
+
+
+    btn.addEventListener("click", function () {
+        console.log(text.getAttribute("value"));
+        div.innerText = div.innerText + text.value + "\n";
+        text.value = "";
+    });
+</script>
+</body>
+</html>
