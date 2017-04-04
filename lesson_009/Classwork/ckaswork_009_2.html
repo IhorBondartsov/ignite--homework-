@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            height: 300vh;
+        }
+        #nav {
+            position: fixed;
+            bottom: 10%;
+            left: 5%;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+<button id="nav">up</button>
+<script>
+    //task 2
+    var state;
+    var action;
+    var pageYLabel;
+    var setState = function (state) {
+        if(state) nav.style.display = 'block';
+        else {
+            if(!action) nav.style.display = 'none';
+        }
+    }
+    function btnShowHide () {
+        var pageY = window.pageYOffset || document.documentElement.scrollTop;
+        var innerHeight = document.documentElement.clientHeight;
+        if (pageY >= innerHeight) {
+            state = 1;
+            action = 0;
+            nav.innerText = 'up';
+            setState(state);
+        } else {
+            state = 0;
+            nav.innerText = 'down';
+            setState(state);
+        }
+    }
+    function btnAction (e) {
+        var pageY = window.pageYOffset || document.documentElement.scrollTop;
+        if (action) {
+            window.scrollTo(0, pageYLabel);
+            action = 0;
+        } else {
+            pageYLabel = pageY;
+            window.scrollTo(0, 0);
+            action = 1;
+        }
+    }
+    document.addEventListener('scroll', btnShowHide);
+    nav.addEventListener('click', btnAction);
+</script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 1 classwork</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="first">
+    <form action="" id="myForm">
+        <input class="dataField" data-reg="/\d/g" type="text" placeholder="login">
+        <input class="dataField" type="text" placeholder="password">
+        <input class="dataField" type="text" placeholder="phone">
+        <button>submit</button>
+    </form>
+</div>
+<script>
+    //Task 1
+    function checkLogin (login) {
+        var reg = /\d/g;
+        if(login.value.match(reg)) {
+            login.style.backgroundColor = 'red';
+            return 0;
+        } else {
+            login.style.backgroundColor = '#fff';
+            return 1;
+        }
+    }
+    function checkPassword (pass) {
+        var reg = /\$/g;
+        if(pass.value.match(reg)) {
+            pass.style.backgroundColor = 'red';
+            return 0;
+        } else {
+            pass.style.backgroundColor = '#fff';
+            return 1;
+        }
+    }
+    function checkPhone (login) {
+        var reg = /\D/g;
+        if(login.value.match(reg)) {
+            login.style.backgroundColor = 'red';
+            return 0;
+        } else {
+            login.style.backgroundColor = '#fff';
+            return 1;
+        }
+    }
+
+    function validate (e) {
+
+        var fields = myForm.getElementsByClassName('dataField');
+        var verif = 0;
+        verif += checkLogin(fields[0]) + checkPassword (fields[1]) + checkPhone (fields[2]);
+        if (verif==fields.length) {
+            alert('Форма успешно отправлена!')
+            return true;
+        } else {
+            alert('Пожалуйста, заполните корректно все поля')
+            return false;
+        }
+    }
+    myForm.onsubmit = validate;
+
+</script>
+
+</body>
+</html>

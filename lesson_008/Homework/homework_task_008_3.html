@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div class="calc1" onclick="calc1('num1','num2',event)">
+    <input type="text" id="num1"/>
+    <input type="text" id="num2"/>
+    <input type="button" id="multip" value="*" />
+    <input type="button" id="divaid" value="/"/>
+    <input type="button" id="plus" value="+"/>
+    <input type="button" id="minus" value="-"/>
+
+</div>
+
+<div id="calc2">
+    <input type="text" id="num3"/>
+    <input type="text" id="num4"/>
+    <input type="button" id="multip1" value="*"/>
+    <input type="button" id="divaid1" value="/"/>
+    <input type="button" id="plus1" value="+"/>
+    <input type="button" id="minus1" value="-"/>
+
+</div>
+<script>
+    function calc1(number1, number2,event) {
+        var n1 = parseInt(document.getElementById(number1).value);
+        var n2 = parseInt(document.getElementById(number2).value);
+
+        var value = event.target.value;
+        switch (value) {
+            case "/":
+                alert( n1 / n2);
+                break;
+            case "*":
+                alert( n1 * n2);
+                break;
+            case "+":
+                alert(  n1 + n2);
+                break;
+            case "-":
+                alert(  n1 - n2);
+                break;
+        }
+    }
+    var calc2 = document.getElementById("calc2");
+    calc2.onclick = function(event){
+        calc1("num3","num4",event);}
+    ;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #ball {
+            border-radius: 50%;
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        #ball h4 {
+            text-align: center;
+            margin: 0 auto;
+            line-height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="ball"><h4>СКИДКА!!!</h4></div>
+
+
+<script>
+    var ball = document.getElementById("ball");
+
+    var h = ball.offsetHeight;
+    var w = ball.offsetWidth;
+
+    ball.onmouseover = function (e) {
+        return move(e);
+    };
+    ball.onmousedown = function (e) {
+        return move(e);
+    };
+    ball.onfocus = function (e) {
+        return move(e);
+    };
+
+
+    function move(e) {
+        console.log("Move work");
+        var style = getComputedStyle(ball);//For work with style
+        var x = e.pageX;
+        var y = e.pageY;
+
+        //Work with axis x
+        var ballLefBound = +(style.left.toString().slice(0, -2));//Left side our ball
+        if (x > ballLefBound + w / 2) {
+            x = (ballLefBound - 20);
+        } else if (x < ballLefBound + w / 2) {
+            x = (ballLefBound + 20);
+        }
+
+        //Work with axis y
+        var ballTopBound = +(style.top.toString().slice(0, -2));//Upper bound our ball
+        if (y > ballTopBound + h / 2) {
+            y = (ballTopBound - 20);
+        } else if (y < ballTopBound + h / 2) {
+            y = (ballTopBound + 20);
+        }
+
+        var windowH = document.documentElement.clientHeight;
+        var windowW = document.documentElement.clientWidth;
+
+        // Проверка на вместимость в окно
+        if (windowH < (y + h)) {
+            y = 0;
+        } else if (y < 0) {
+            y = windowH - h;
+        }
+
+        if (windowW < (x + w)) {
+            x = 0;
+        } else if (x < 0) {
+            x = windowW - w;
+        }
+
+        ball.style.left = x + "px";
+        ball.style.top = y + "px";
+    }
+
+
+</script>
+
+</body>
+</html>

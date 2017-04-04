@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="output"></div>
+
+<script>
+    function download(name) {
+
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", name, true);
+
+        xhr.timeout = 20000; // Task 2
+        xhr.ontimeout = function () {
+            alert('Извините, запрос на файл' + name + ' превысил максимальное время');
+        }
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    document.getElementById("output").innerHTML += xhr.responseText; // responseText - текст ответа полученного с сервера.
+                }
+            }
+        }
+
+
+        xhr.send();
+
+    }
+
+    window.onload = function () {
+        download("part1.html");
+        download("part2.html");
+    }
+</script>
+</body>
+</html>

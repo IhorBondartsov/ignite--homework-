@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #sDiv {
+            width: 50px;
+            height: 50px;
+            border: solid 1px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+<input type="text" id="text1">
+<input type="text" id="text2">
+<input type="button" id="btn1" value="click please"/>
+
+<div id="sDiv"></div>
+<script>
+
+    var btn = document.getElementById("btn1");
+    var text1 = document.getElementById("text1");
+    var text2 = document.getElementById("text2");
+    var div = document.getElementById("sDiv");
+
+    function allWritte(text1, text2) {
+        var reg = /\D/;
+        if (text1.match(reg) == null && text2.match(reg) == null) {
+            return true;
+        }
+        return false;
+    }
+
+    btn.onclick = function () {
+        if (allWritte(text1.value, text2.value)) {
+            div.style.left = text1.value + "px";
+            div.style.top = text2.value + "px";
+        } else {
+            alert("You didnt writte all text section");
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
