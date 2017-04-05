@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Oswald, sans-serif;
+}
+h1, h2, h3{
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: #ffe600;
+}
+
+header {
+    background-image: url(../img/bg_header.png);
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.top_menu {
+    min-height: 100px;
+    line-height: 100px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.top_menu img {
+    vertical-align: middle;
+}
+
+.top_menu li {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #fff;
+    margin: 0 20px;
+    position: relative;
+}
+
+.top_menu li:after {
+    position: relative;
+    content: "";
+    display: inline-block;
+    background-color: #ffe600;
+    width: 5px;
+    height: 5px;
+    vertical-align: middle;
+    left: 23px;
+
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    display: none;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.slide h1{
+    color: #fff;
+    font-size: 67px;
+}
+
+.slider_main {
+    background-color:rgba(0, 0, 0, .3);
+    margin: 290px 0;
+    padding: ;
+}
+
+.slider_main .btn {
+    color: #ffe600;
+    font-size: 50px;
+    text-decoration: none;
+
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+
+}
+
+.slider_main .button {
+    background-color: #ffe600;
+    border: none;
+    height: 50px;
+    width: 230px;
+    display: inline-block;
+}
+
+.slider_main .active {
+    display: block;
+    padding: 50px 0 65px;
+}
+
+
+
+
+
