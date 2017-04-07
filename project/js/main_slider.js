@@ -32,7 +32,7 @@ prev.onclick = function () {
 }
 // default direction to right. If you want to change on left you can write true in variable "changeOfDirection"
 function slider(changeOfDirection) {
-    var active = document.getElementsByClassName("active");
+    var active = sliderMain.getElementsByClassName("active");
     var nextElem;
     if (changeOfDirection) {
         nextElem = active[0].previousElementSibling;
