@@ -6,15 +6,18 @@
     <meta charset="UTF-8">
     <title>Website development</title>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css"/>
-    <link href='https://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'/>
 </head>
 <body>
 
 <!--Start header-->
 <header>
-    start >
-
     <!--Start menu-->
     <nav class="top_menu ">
         <div class="container">
@@ -23,7 +26,7 @@
                     <img src="img/logo.png" alt="smak">
                 </div>
                 <div class="col-md-6 top_anchor">
-                    <ul>
+                    <ul class="menu_item">
                         <li><a href="*">Home</a></li>
                         <li><a href="*">Services</a></li>
                         <li><a href="*">Work</a></li>
@@ -39,25 +42,23 @@
     <article class="slider">
         <div id="slider_main">
 
-            <div id="prev" class="btn"><<</div>
+            <div id="prev" class="btn" onclick="alert('asdads');"><<</div>
             <div id="next" class="btn">>></div>
 
             <div class="container">
                 <div class="row">
-
-
                     <div class="col-md-12">
                         <div class="slide active">
                             <h1>Branding have another <br/>definition</h1>
-                            <input type="button" value="Buy this theme" class="button black"/>
+                            <input type="button " value="Buy this theme" class="button black in_slide"/>
                         </div>
                         <div class="slide">
                             <h1>Branding have another <br/>definition 2 </h1>
-                            <input type="button" value="Buy this theme" class="button black"/>
+                            <input type="button " value="Buy this theme" class="button black in_slide"/>
                         </div>
                         <div class="slide">
                             <h1>Branding have another <br/>definition 3 </h1>
-                            <input type="button" value="Buy this theme" class="button black"/>
+                            <input type="button " value="Buy this theme" class="button black in_slide"/>
                         </div>
                     </div>
 
@@ -183,16 +184,738 @@
 </div>
 <!--End how we do it-->
 
-<div class="slider_partner">
-    <div class="slide active " style="background-color: red">1</div>
-    <div class="slide active " style="background-color: black">2</div>
-    <div class="slide active" style="background-color: green">3</div>
-    <div class="slide " style="background-color:blue">4</div>
-    <div class="slide" style="background-color: brown">5</div>
-    <div class="slide" style="background-color: #B2F511">6</div>
-    <div class="slide" style="background-color: yellow">7</div>
+<!--Start what we done so far-->
+<div class="standart_div what_we_done">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class=" title_block yellow_buttom">
+                    <h4>our works</h4>
+
+                    <h1>What we done so far</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="block_text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad aliquid
+                    architecto aspernatur assumenda aut consequuntur cumque exercitationem facilis fugiat nemo nihil
+                    nisi non optio quidem quisquam ratione repudiandae totam! Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Aliquid cum delectus dolorum ducimus est laboriosam officia pariatur provident,
+                    quaerat quidem saepe, sed, totam! Architecto dolore nostrum placeat quibusdam quisquam rerum.</p>
+            </div>
+
+        </div>
+    </div>
 </div>
+<!--End what we done so far-->
+
+<!--Start portfolio-->
+<div class="standart_div">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="menu_portfolio">
+                    <ul class="menu_item">
+                        <li>All</li>
+                        <li>Web Design</li>
+                        <li>Graphic design</li>
+                        <li>photography</li>
+                        <li>illustration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="gallery">
+        <ul>
+            <li>
+                <img src="img/g1.png">
+
+                <div class="gallery-desc">
+                    <div class="gallery-text">
+                        <h3>SAMPLE IMAGE</h3>
+
+                        <p>GRAPHIC DESIGN</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/g1.png">
+
+                <div class="gallery-desc">
+                    <div class="gallery-text">
+                        <h3>SAMPLE IMAGE</h3>
+
+                        <p>GRAPHIC DESIGN</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/g1.png">
+
+                <div class="gallery-desc">
+                    <div class="gallery-text">
+                        <h3>SAMPLE IMAGE</h3>
+
+                        <p>GRAPHIC DESIGN</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/g1.png">
+
+                <div class="gallery-desc">
+                    <div class="gallery-text">
+                        <h3>SAMPLE IMAGE</h3>
+
+                        <p>GRAPHIC DESIGN</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/g1.png">
+
+                <div class="gallery-desc">
+                    <div class="gallery-text">
+                        <h3>SAMPLE IMAGE</h3>
+
+                        <p>GRAPHIC DESIGN</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/g1.png">
+
+                <div class="gallery-desc">
+                    <div class="gallery-text">
+                        <h3>SAMPLE IMAGE</h3>
+
+                        <p>GRAPHIC DESIGN</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/g1.png">
+
+                <div class="gallery-desc">
+                    <div class="gallery-text">
+                        <h3>SAMPLE IMAGE</h3>
+
+                        <p>GRAPHIC DESIGN</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/g1.png">
+
+                <div class="gallery-desc">
+                    <div class="gallery-text">
+                        <h3>SAMPLE IMAGE</h3>
+
+                        <p>GRAPHIC DESIGN</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/g1.png">
+
+                <div class="gallery-desc">
+                    <div class="gallery-text">
+                        <h3>SAMPLE IMAGE</h3>
+
+                        <p>GRAPHIC DESIGN</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/g1.png">
+
+                <div class="gallery-desc">
+                    <div class="gallery-text">
+                        <h3>SAMPLE IMAGE</h3>
+
+                        <p>GRAPHIC DESIGN</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/g1.png">
+
+                <div class="gallery-desc">
+                    <div class="gallery-text">
+                        <h3>SAMPLE IMAGE</h3>
+
+                        <p>GRAPHIC DESIGN</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/g1.png">
+
+                <div class="gallery-desc">
+                    <div class="gallery-text">
+                        <h3>SAMPLE IMAGE</h3>
+
+                        <p>GRAPHIC DESIGN</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--End portfolio-->
+
+<!--Start do you like our portfolio-->
+<div class="standart standart_div">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <div class="button_img"></div>
+                </div>
+                <div class=" title_block">
+                    <h1>Do you like our portfolio?</h1>
+                </div>
+                <p class="block_text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad aliquid
+                    architecto aspernatur assumenda aut consequuntur cumque exercitationem facilis fugiat nemo nihil
+                    nisi non optio quidem totam! Architecto dolore nostrum placeat quibusdam quisquam rerum.</p>
+
+                <div>
+                    <input type="button" value="CONTACT US" class="button white"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End do you like our portfolio-->
+
+<!--Start we are proud of these numbers-->
+<div class="standart_div black">
+    <div class="container">
+        <div class="row">
+            <div class="title_block">
+                <h1>we are proud of these numbers</h1>
+            </div>
+        </div>
+        <p class="block_text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad aliquid
+            architecto aspernatur assumenda aut consequuntur cumque exercitationem facilis fugiat nemo nihil
+            nisi non optio quidem totam! Architecto dolore nostrum placeat quibusdam quisquam rerum.</p>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="statistic">
+                    <p id="happy_clients numb">0</p>
+                    <h4 class="numb_name">Happy clients</h4>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="statistic">
+                    <p id="completed_projects numb">0</p>
+                    <h4 class="numb_name">Completed projects</h4>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="statistic">
+                    <p id="awards">0</p>
+                    <h4 class="numb_name numb">awards</h4>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="statistic">
+                    <p id="coffee_drinks numb">0</p>
+                    <h4 class="numb_name">coffee drinks</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End we are proud of these numbers-->
+
+
+<!--Start Who we are-->
+<div class="standart_div">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class=" title_block yellow_buttom">
+                    <h4>About us</h4>
+
+                    <h1>Who we are</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="block_text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad aliquid
+                    architecto aspernatur assumenda aut consequuntur cumque exercitationem facilis fugiat nemo nihil
+                    nisi non optio quidem quisquam ratione repudiandae totam! Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Aliquid cum delectus dolorum ducimus est laboriosam officia pariatur provident,
+                    quaerat quidem saepe, sed, totam! Architecto dolore nostrum placeat quibusdam quisquam rerum.</p>
+            </div>
+        </div>
+        <div class="row line_row">
+            <div class="col-md-6 line_col">
+                <div class="block_information">
+                    <div class=" icon_in_block"></div>
+                    <h3 class="title">On time projets</h3>
+
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem
+                        consequatur dicta, ducimus eius est hic inventore iusto, labore laborum maxime necessitatibus
+                        nemo praesentium quasi quod rerum sunt suscipit ut.</p>
+                </div>
+            </div>
+            <div class="col-md-6 line_col">
+                <div class="block_information">
+                    <div class=" icon_in_block"></div>
+                    <h3 class="title">Fully support</h3>
+
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolor id
+                        sequi vel? Ab alias corporis cumque dolor esse ipsa iure laboriosam, nemo perferendis porro
+                        repellendus tempora, temporibus vitae. Doloribus?</p>
+                </div>
+            </div>
+        </div>
+        <div class="row line_row">
+            <div class="col-md-6 line_col">
+                <div class="block_information">
+                    <div class=" icon_in_block"></div>
+                    <h3 class="title">Professional experience</h3>
+
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid
+                        animi aperiam commodi dolores ea eaque earum explicabo facilis fuga, laboriosam minima non
+                        porro, qui reiciendis repellendus sint soluta sunt.</p>
+                </div>
+            </div>
+            <div class="col-md-6 line_col">
+                <div class="block_information">
+                    <div class=" icon_in_block"></div>
+                    <h3 class="title">Communicative team</h3>
+
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis culpa cumque
+                        eum fugiat laborum, quasi quos tenetur? Fuga, laudantium, reprehenderit. Delectus dolorum eaque
+                        eius, iste iure possimus quae soluta sunt.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Who we are-->
+
+
+<!--Start team-->
+<div class="standart_block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title_block">
+                    <h1>the team</h1>
+                </div>
+                <p class="block_text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad aliquid
+                    architecto aspernatur assumenda aut consequuntur cumque exercitationem facilis fugiat nemo nihil
+                    nisi non optio quidem totam! Architecto dolore nostrum placeat quibusdam quisquam rerum.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="member_team">
+                    <img src="img/team/sysAdmin.jpg" alt=""/>
+
+                    <h2 class="name">Name Surname1</h2>
+
+                    <h2 class="position">System administrator</h2>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="member_team">
+                    <img src="img/team/desinger.jpg" alt=""/>
+
+                    <h2 class="name">Name Surname2</h2>
+
+                    <h2 class="position">Designer</h2>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="member_team">
+                    <img src="img/team/shamany-752.jpg" alt=""/>
+
+                    <h2 class="name">Name Surname3</h2>
+
+                    <h2 class="position">Developer</h2>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="member_team">
+                    <img src="img/team/sinor.jpg" alt=""/>
+
+                    <h2 class="name">Name Surname4</h2>
+
+                    <h2 class="position">Team lead</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 center">
+                <div class="triangle"></div>
+            </div>
+            <div class="col-md-3 center">
+                <div class="triangle"></div>
+            </div>
+            <div class="col-md-3 center">
+                <div class="triangle"></div>
+            </div>
+            <div class="col-md-3 center">
+                <div class="triangle"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End team-->
+
+<!--Start information-->
+<div class="standart_div night_black">
+    <div class="container">
+        <div class="about_member">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="name">Name Surname1</h2>
+
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque
+                        corporis
+                        cumque eum excepturi explicabo facere inventore labore laboriosam libero magnam minus, nam
+                        placeat
+                        similique temporibus velit veniam vero, voluptatum! Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Animi autem dolores dolorum, eos fugit in libero molestias nam nemo officia,
+                        optio
+                        praesentium quae quo quod quos reprehenderit sapiente sit voluptate.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about_member active">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="name">Name Surname2</h2>
+
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque
+                        corporis
+                        cumque eum excepturi explicabo facere inventore labore laboriosam libero magnam minus, nam
+                        placeat
+                        similique temporibus velit veniam vero, voluptatum! Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Animi autem dolores dolorum, eos fugit in libero molestias nam nemo officia,
+                        optio
+                        praesentium quae quo quod quos reprehenderit sapiente sit voluptate.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about_member">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="name">Name Surname3</h2>
+
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque
+                        corporis
+                        cumque eum excepturi explicabo facere inventore labore laboriosam libero magnam minus, nam
+                        placeat
+                        similique temporibus velit veniam vero, voluptatum! Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Animi autem dolores dolorum, eos fugit in libero molestias nam nemo officia,
+                        optio
+                        praesentium quae quo quod quos reprehenderit sapiente sit voluptate.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about_member">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="name">Name Surname4</h2>
+
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque
+                        corporis
+                        cumque eum excepturi explicabo facere inventore labore laboriosam libero magnam minus, nam
+                        placeat
+                        similique temporibus velit veniam vero, voluptatum! Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Animi autem dolores dolorum, eos fugit in libero molestias nam nemo officia,
+                        optio
+                        praesentium quae quo quod quos reprehenderit sapiente sit voluptate.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="icons">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End information-->
+
+<!--Start skills-->
+<div class="standart_div black">
+    <div class="container">
+        <div class="row">
+            <div class="title_block">
+                <h1>Skills</h1>
+            </div>
+            <p class="block_text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad aliquid
+                architecto aspernatur assumenda aut consequuntur cumque exercitationem facilis fugiat nemo nihil
+                nisi non optio quidem totam! Architecto dolore nostrum placeat quibusdam quisquam rerum.</p>
+
+        </div>
+        <div class="row">
+            <div class="line_information">
+                <div class="col-md-3 item_cont">
+                    <div class="progress">
+                        <svg class="progress-circle" width="200px" height="200px"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <circle class="progress-circle-back"
+                                    cx="80" cy="80" r="74"></circle>
+                            <circle class="progress-circle-prog"
+                                    cx="80" cy="80" r="74"></circle>
+                        </svg>
+                        <div class="progress-text" data-progress="0">0%</div>
+                    </div>
+                    <h1 class="skills">HTML&&CSS</h1>
+                </div>
+                <div class="col-md-3 item_cont">
+                    <div class="progress">
+                        <svg class="progress-circle" width="200px" height="200px"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <circle class="progress-circle-back"
+                                    cx="80" cy="80" r="74"></circle>
+                            <circle class="progress-circle-prog"
+                                    cx="80" cy="80" r="74"></circle>
+                        </svg>
+                        <div class="progress-text" data-progress="0">0%</div>
+                    </div>
+                    <h1 class="skills">AI & PS</h1>
+                </div>
+                <div class="col-md-3 item_cont">
+                    <div class="progress">
+                        <svg class="progress-circle" width="200px" height="200px"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <circle class="progress-circle-back"
+                                    cx="80" cy="80" r="74"></circle>
+                            <circle class="progress-circle-prog"
+                                    cx="80" cy="80" r="74"></circle>
+                        </svg>
+                        <div class="progress-text" data-progress="0">0%</div>
+                    </div>
+                    <h1 class="skills">JS && PHP</h1>
+                </div>
+                <div class="col-md-3 item_cont">
+                    <div class="progress">
+                        <svg class="progress-circle" width="200px" height="200px"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <circle class="progress-circle-back"
+                                    cx="80" cy="80" r="74"></circle>
+                            <circle class="progress-circle-prog"
+                                    cx="80" cy="80" r="74"></circle>
+                        </svg>
+                        <div class="progress-text" data-progress="0">0%</div>
+                    </div>
+                    <h1 class="skills">Photography</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End scills-->
+
+<!--Start who love to work witn us-->
+<div class="standart standart_div">
+    <div class="container">
+        <div class="row">
+            <div class="col-ms-12"></div>
+
+            <div class=" title_block yellow_buttom">
+                <h4>our clients</h4>
+
+                <h1>who love to work witn us</h1>
+            </div>
+            <p class="block_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at doloribus ex iste
+                quas quos ratione sapiente? At dolorem eligendi, facere ipsa maxime, officiis omnis placeat qui,
+                repellendus sint voluptatum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad
+                aliquid
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="slider_partner">
+                <div class="slide active animated"><img src="img/logo/logo1.png" alt=""/></div>
+                <div class="slide active animated"><img src="img/logo/logo2.png" alt=""/></div>
+                <div class="slide active animated"><img src="img/logo/logo3.png" alt=""/></div>
+                <div class="slide active animated"><img src="img/logo/logo4.png" alt=""/></div>
+                <div class="slide active"><img src="img/logo/logo5.png" alt=""/></div>
+                <div class="slide active"><img src="img/logo/logo1.png" alt=""/></div>
+                <div class="slide"><img src="img/logo/logo2.png" alt=""/></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--Start who love to work witn us-->
+
+<!--Start Reviews-->
+<div class="standart_div black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="div_review active">
+                    <div class="title_block yellow_buttom">
+                        <p class="reviews">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid
+                            cupiditate dolorem, eos ex explicabo facere harum iusto maiores minima modi nobis officiis
+                            quas
+                            rem sapiente similique, sit soluta ullam?"</p>
+                    </div>
+                    <p class="autor">Somebody</p>
+                </div>
+                <div class="div_review ">
+                    <div class="title_block yellow_buttom">
+                        <p class="reviews">"2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid
+                            cupiditate dolorem, eos ex explicabo facere harum iusto maiores minima modi nobis officiis
+                            quas
+                            rem sapiente similique, sit soluta ullam?"</p>
+                    </div>
+                    <p class="autor">Somebody1</p>
+                </div>
+                <div class="div_review ">
+                    <div class="title_block yellow_buttom">
+                        <p class="reviews">" 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+                            aliquid
+                            cupiditate dolorem, eos ex explicabo facere harum iusto maiores minima modi nobis officiis
+                            quas
+                            rem sapiente similique, sit soluta ullam?"</p>
+                    </div>
+                    <p class="autor">Somebody2</p>
+                </div>
+                <div class="div_review ">
+                    <div class="title_block yellow_buttom">
+                        <p class="reviews">" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid
+                            cupiditate dolorem, eos ex explicabo facere harum iusto maiores minima modi nobis officiis
+                            quas
+                            rem sapiente similique, sit soluta ullam?"</p>
+                    </div>
+                    <p class="autor">Somebody3</p>
+                </div>
+                <div id="btn_java_script"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--End Reviews-->
+
+<div class=" standart_div">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class=" title_block yellow_buttom">
+                    <h4>contact us</h4>
+
+                    <h1>Where you can find us</h1>
+                </div>
+
+                <p class="block_text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad aliquid
+                    architecto aspernatur assumenda aut consequuntur cumque exercitationem facilis fugiat nemo nihil
+                    nisi non optio quidem quisquam ratione repudiandae totam! Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Aliquid cum delectus dolorum ducimus est laboriosam officia pariatur provident,
+                    quaerat quidem saepe, sed, totam! Architecto dolore nostrum placeat quibusdam quisquam rerum.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="line_information ">
+                <div class="col-md-4 contact_us">
+                    <div class="contact"></div>
+                    <h2>our address</h2>
+
+                    <p class="content size18">214 Awesome Street, NY</p></div>
+                <div class="col-md-4 contact_us">
+                    <div class="contact"></div>
+                    <h2>our mail</h2>
+
+                    <p class="content size18">awesomemail@ourmail.com.</p></div>
+                <div class="col-md-4 contact_us">
+                    <div class="contact"></div>
+                    <h2>our phone</h2>
+
+                    <p class="content size18">(0)123-456-789-00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="standart_div black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title_block">
+                    <h1>Send a message</h1>
+                </div>
+                <p class="block_text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad aliquid
+                    architecto aspernatur assumenda aut consequuntur cumque exercitationem facilis fugiat nemo nihil
+                    nisi non optio quidem totam! Architecto dolore nostrum placeat quibusdam quisquam rerum.</p>
+            </div>
+        </div>
+        <form class="form">
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" placeholder="Your Name" class="night_black_field " id="name"/>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" placeholder="Your Mail" class="night_black_field " id="mail"/>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" placeholder="Your Subject" class="night_black_field "
+                           id="subjext"/></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <textarea placeholder="Enter message here..." class="night_black_field big"
+                              id="message"></textarea>
+                    <input type="button " value="Send message" class="button color_black"/>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!--Start footer-->
+<footer class=" standart_div  night_black">
+    <div class="container">
+        <div class="row">
+            <p>© Copyright 2013 <span class="yellow_font">Smak</span> All Rights Reserved.</p>
+            <ul class="icon_wibe">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <div class="button_img return"></div>
+        </div>
+    </div>
+</footer>
+<!--End footer-->
 <script src="js/main_slider.js"></script>
 <script src="js/partner_slider.js"></script>
+<script src="js/dynamic_progress_circle.js"></script>
+<script src="js/button_for_dive.js"></script>
+
 </body>
 </html>

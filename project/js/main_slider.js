@@ -24,12 +24,12 @@ function pauseTimer() {
 next.onclick = function () {
     pauseTimer();
     return slider();
-}
+};
 
 prev.onclick = function () {
     pauseTimer();
     return slider(true);
-}
+};
 // default direction to right. If you want to change on left you can write true in variable "changeOfDirection"
 function slider(changeOfDirection) {
     var active = sliderMain.getElementsByClassName("active");
@@ -47,3 +47,4 @@ function slider(changeOfDirection) {
     active[0].classList.remove("active");
     nextElem.classList.add("active");
 }
+;

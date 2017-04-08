@@ -3,7 +3,7 @@
  */
 var sliderPartner = document.getElementsByClassName("slider_partner")[0];
 var divsPartner = sliderPartner.getElementsByClassName("slide");
-var timer2 = setInterval(nextPartner, 1000);
+var timer2 = setInterval(nextPartner, 3000);
 
 
 function nextPartner() {
