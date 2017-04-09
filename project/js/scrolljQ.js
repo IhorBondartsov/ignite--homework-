@@ -15,3 +15,6 @@ ulMenu.onclick = scroll;
 
 var contact_us_bt = document.getElementById("contact_us_bt");
 contact_us_bt.onclick = scroll;
+
+var intop = document.getElementById("return");
+intop.onclick = scroll;

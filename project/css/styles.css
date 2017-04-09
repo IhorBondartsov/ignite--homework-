@@ -378,6 +378,7 @@ header {
 .member_team {
     border-bottom: solid #dfe4e5 3px;
     margin-top: 60px;
+    text-align: center;
 }
 
 .name {
@@ -436,47 +437,50 @@ header {
 }
 
 /* Start Dinamic progress circle*/
-
-.progress {
+.skills{
+    padding-top: 20px;
+    color: #ffe600;
+    text-align: center;
+}
+.circle-progress {
+    display: flex;
     position: relative;
-    height: 160px;
-    width: 160px;
-    cursor: pointer;
-    top: 50%;
-    left: 50%;
-    margin: -80px 0 0 -80px;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
 }
 
-.progress-circle {
-    transform: rotate(-90deg);
-    margin-top: -40px;
+
+.circle-progress.animation svg circle {
+    animation: load 3s cubic-bezier(0.41, 0.01, 0.32, 1.3) forwards;
 }
 
-.progress-circle-back {
-    fill: none;
-    stroke: #D2D2D2;
-    stroke-width: 10px;
+.circle-progress:not(.animation) svg circle {
+    stroke-dashoffset: 282.6;
 }
 
-.skills {
-    text-align: center;
-}
-
-.progress-circle-prog {
-    fill: none;
-    stroke: #ffe600;
-    stroke-width: 10px;
-    stroke-dasharray: 0 999;
-    stroke-dashoffset: 0px;
-    transition: stroke-dasharray 0.7s linear 0s;
-}
-
-.progress-text {
-    width: 100%;
+.circle-progress svg {
     position: absolute;
-    top: 60px;
-    text-align: center;
-    font-size: 2em;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: rotate(-90deg);
+}
+
+.circle-progress svg circle {
+    fill: transparent;
+}
+
+.percent {
+    margin: auto;
+    font-size: 30px;
+}
+
+@keyframes load {
+    from {
+        stroke-dashoffset: 282.6;
+    }
 }
 
 /* End Dinamic progress circle*/
@@ -489,6 +493,7 @@ header {
     margin: 25px auto;
     font-size: 20px;
     width: 555px;
+    max-width: 90%;
     text-align: center;
 }
 
@@ -685,6 +690,189 @@ footer.standart_div.night_black {
 
 }
 
+.triangle{
+    display: none ;
+}
+.triangle.active{
+    display: inline-block;
+}
+ul#menu_item {
+    text-align: right;
+}
+.teamAll {
+    background-color: #fbfbfb;
+}
+.member_team {
+    background-color: #ffffff;
+}
+.about_member.active {
+    display: inline-block;
+    text-align: left;
+}
+.skills .icons {
+    text-align: left;
+}
+/*media rools*/
+@media all and (max-width: 1300px) {
+    .standart_div {
+        padding: 50px 0 50px;
+    }
+    #slider_main {
+        margin: 250px 0 150px;
+    }
+    .slide h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .button {
+        height: 45px;
+        width: 200px;
+    }
+    .button.in_slide {
+        font-size: 18px;
+    }
+    .title_block h4 {
+        font-size: 15px;
+    }
 
+    .title_block h1 {
+        padding: 15px;
+        font-size: 25px;
+    }
+    .block_text {
+        font-size: 14px;
+    }
+    .line_information h2 {
+        margin: 20px auto;
+    }
+    .gallery li {
+        width: 21%;
+    }
+}
 
+@media all and (max-width: 991px) {
+    .slide h1 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+    .button.in_slide {
+        font-size: 15px;
+    }
+    .button {
+        width: 170px;
+        margin-top: 25px;
+    }
+    #prev {
+        left: 10%;
+    }
+    #next {
+        right: 10%;
+    }
 
+    .title_block h1 {
+        font-size: 20px;
+    }
+    .title_block h4 {
+        font-size: 14px;
+    }
+    .block_text {
+        font-size: 13px;
+    }
+    .standart_div {
+        padding: 25px 0 25px;
+    }
+    .circle,
+    .icon {
+        margin: 15px auto 0;
+    }
+    .line_information {
+        margin-top: 40px;
+    }
+    .triangle {
+        display: none;
+    }
+    .circle-progress {
+        margin-top: 20px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .logo,
+    ul#menu_item {
+        text-align: center;
+    }
+    .logo img {
+        max-width: 90px;
+    }
+    .top_menu {
+        min-height: 90px;
+        line-height: 40px;
+    }
+    #slider_main {
+        margin: 150px 0 50px;
+    }
+    #slider_main .btn {
+        display: none;
+    }
+    .slide h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .button.in_slide {
+        font-size: 14px;
+    }
+    .button {
+        width: 150px;
+    }
+    #slider_main .active {
+        padding: 30px 0 30px;
+    }
+
+    .statistic {
+        margin-top: 0px;
+    }
+    .block_information .content {
+        padding-left: 30px;
+    }
+    .gallery li {
+        width: 30%;
+    }
+    .reviews {
+        font-size: 15px;
+    }
+}
+@media all and (max-width: 550px) {
+    .menu_item li {
+        margin: 0px 10px;
+        font-size: 11px;
+    }
+    .menu_item li::after {
+        display: none;
+    }
+    .gallery li {
+        width: 40%;
+    }
+    .gallery {
+        margin-top: 35px;
+    }
+    .icon_in_block{
+        display: none;
+    }
+    .slide h1 {
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+}
+@media all and (max-width: 400px) {
+.menu_item li {
+    margin: 0px 6px;
+}
+    .menu_item.gallery_menu li {
+        display: block;
+        text-align: left;
+        padding-left: 5%;
+        margin-top: 5px;
+        font-size: 12px;
+    }
+}
