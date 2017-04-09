@@ -26,20 +26,20 @@
                     <img src="img/logo.png" alt="smak">
                 </div>
                 <div class="col-md-6 top_anchor">
-                    <ul class="menu_item">
-                        <li><a href="*">Home</a></li>
-                        <li><a href="*">Services</a></li>
-                        <li><a href="*">Work</a></li>
-                        <li><a href="*">About</a></li>
-                        <li><a href="*">Clients</a></li>
-                        <li><a href="*">Contact</a></li>
+                    <ul class="menu_item" id="menu_item">
+                        <li><a href="" data-where="home">Home</a></li>
+                        <li><a href="" data-where="services">Services</a></li>
+                        <li><a href="" data-where="work">Work</a></li>
+                        <li><a href="" data-where="about">About</a></li>
+                        <li><a href="" data-where="clients">Clients</a></li>
+                        <li><a href="" data-where="contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
     <!--END menu-->
-    <article class="slider">
+    <article class="slider" id="home">
         <div id="slider_main">
 
             <div id="prev" class="btn" onclick="alert('asdads');"><<</div>
@@ -70,7 +70,7 @@
     <!--End header-->
 </header>
 <!--start "What we love to do"-->
-<div class="standart_div whot_we_love">
+<div class="standart_div whot_we_love" id="services">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -93,7 +93,7 @@
         <div class="row">
             <div class="line_information">
                 <div class="col-md-3 item_cont">
-                    <div class="circle"></div>
+                    <div class="circle increase"></div>
                     <h2>web design</h2>
 
                     <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at autem et fugiat
@@ -101,7 +101,7 @@
                         recusandae tempora! Ad deleniti distinctio dolorem praesentium quis. Consequuntur excepturi ipsa
                         necessitatibus sequi veritatis!</p></div>
                 <div class="col-md-3 item_cont">
-                    <div class="circle"></div>
+                    <div class="circle increase"></div>
                     <h2>GRAPHIC DESIGN</h2>
 
                     <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque error explicabo
@@ -109,7 +109,7 @@
                         nisi non officia officiis perferendis porro quaerat quidem quos recusandae reiciendis, sequi
                         tempora voluptatibus.</p></div>
                 <div class="col-md-3 item_cont">
-                    <div class="circle"></div>
+                    <div class="circle increase"></div>
                     <h2>photografy</h2>
 
                     <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias aperiam
@@ -117,7 +117,7 @@
                         eligendi exercitationem facere facilis iste laborum natus nihil, quis ratione, rem rerum sed
                         totam unde veritatis voluptas.</p></div>
                 <div class="col-md-3 item_cont">
-                    <div class="circle"></div>
+                    <div class="circle increase"></div>
                     <h2>developing</h2>
 
                     <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid
@@ -185,7 +185,7 @@
 <!--End how we do it-->
 
 <!--Start what we done so far-->
-<div class="standart_div what_we_done">
+<div class="standart_div what_we_done" id="work">
     <div class="container">
         <div class="row">
 
@@ -218,8 +218,8 @@
 
             <div class="col-md-12">
                 <div class="menu_portfolio">
-                    <ul class="menu_item">
-                        <li>All</li>
+                    <ul class="menu_item gallery_menu">
+                        <li class="press">All</li>
                         <li>Web Design</li>
                         <li>Graphic design</li>
                         <li>photography</li>
@@ -238,7 +238,29 @@
 
                 <div class="gallery-desc">
                     <div class="gallery-text">
-                        <h3>SAMPLE IMAGE</h3>
+                        <h3 class="type_img">WEB DESIGN</h3>
+
+                        <p>WEB DESIGN</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/g1.png">
+
+                <div class="gallery-desc">
+                    <div class="gallery-text">
+                        <h3 class="type_img">WEB DESIGN</h3>
+
+                        <p>WEB DESIGN</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/g1.png">
+
+                <div class="gallery-desc">
+                    <div class="gallery-text">
+                        <h3 class="type_img">GRAPHIC DESIGN</h3>
 
                         <p>GRAPHIC DESIGN</p>
                     </div>
@@ -249,7 +271,7 @@
 
                 <div class="gallery-desc">
                     <div class="gallery-text">
-                        <h3>SAMPLE IMAGE</h3>
+                        <h3 class="type_img">GRAPHIC DESIGN</h3>
 
                         <p>GRAPHIC DESIGN</p>
                     </div>
@@ -260,9 +282,9 @@
 
                 <div class="gallery-desc">
                     <div class="gallery-text">
-                        <h3>SAMPLE IMAGE</h3>
+                        <h3 class="type_img">PHOTOGRAPHY</h3>
 
-                        <p>GRAPHIC DESIGN</p>
+                        <p>PHOTOGRAPHY</p>
                     </div>
                 </div>
             </li>
@@ -271,9 +293,9 @@
 
                 <div class="gallery-desc">
                     <div class="gallery-text">
-                        <h3>SAMPLE IMAGE</h3>
+                        <h3 class="type_img">PHOTOGRAPHY</h3>
 
-                        <p>GRAPHIC DESIGN</p>
+                        <p>PHOTOGRAPHY</p>
                     </div>
                 </div>
             </li>
@@ -282,9 +304,9 @@
 
                 <div class="gallery-desc">
                     <div class="gallery-text">
-                        <h3>SAMPLE IMAGE</h3>
+                        <h3 class="type_img">PHOTOGRAPHY</h3>
 
-                        <p>GRAPHIC DESIGN</p>
+                        <p>PHOTOGRAPHY</p>
                     </div>
                 </div>
             </li>
@@ -293,9 +315,9 @@
 
                 <div class="gallery-desc">
                     <div class="gallery-text">
-                        <h3>SAMPLE IMAGE</h3>
+                        <h3 class="type_img">ILLUSTRATION</h3>
 
-                        <p>GRAPHIC DESIGN</p>
+                        <p>ILLUSTRATION</p>
                     </div>
                 </div>
             </li>
@@ -304,9 +326,9 @@
 
                 <div class="gallery-desc">
                     <div class="gallery-text">
-                        <h3>SAMPLE IMAGE</h3>
+                        <h3 class="type_img">ILLUSTRATION</h3>
 
-                        <p>GRAPHIC DESIGN</p>
+                        <p>ILLUSTRATION</p>
                     </div>
                 </div>
             </li>
@@ -315,9 +337,9 @@
 
                 <div class="gallery-desc">
                     <div class="gallery-text">
-                        <h3>SAMPLE IMAGE</h3>
+                        <h3 class="type_img">ILLUSTRATION</h3>
 
-                        <p>GRAPHIC DESIGN</p>
+                        <p>ILLUSTRATION</p>
                     </div>
                 </div>
             </li>
@@ -326,9 +348,9 @@
 
                 <div class="gallery-desc">
                     <div class="gallery-text">
-                        <h3>SAMPLE IMAGE</h3>
+                        <h3 class="type_img">ILLUSTRATION</h3>
 
-                        <p>GRAPHIC DESIGN</p>
+                        <p>ILLUSTRATION</p>
                     </div>
                 </div>
             </li>
@@ -337,29 +359,7 @@
 
                 <div class="gallery-desc">
                     <div class="gallery-text">
-                        <h3>SAMPLE IMAGE</h3>
-
-                        <p>GRAPHIC DESIGN</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img src="img/g1.png">
-
-                <div class="gallery-desc">
-                    <div class="gallery-text">
-                        <h3>SAMPLE IMAGE</h3>
-
-                        <p>GRAPHIC DESIGN</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img src="img/g1.png">
-
-                <div class="gallery-desc">
-                    <div class="gallery-text">
-                        <h3>SAMPLE IMAGE</h3>
+                        <h3 class="type_img">GRAPHIC DESIGN</h3>
 
                         <p>GRAPHIC DESIGN</p>
                     </div>
@@ -386,7 +386,7 @@
                     nisi non optio quidem totam! Architecto dolore nostrum placeat quibusdam quisquam rerum.</p>
 
                 <div>
-                    <input type="button" value="CONTACT US" class="button white"/>
+                    <input type="button" value="CONTACT US" class="button white " data-where="contact" id="contact_us_bt"/>
                 </div>
             </div>
         </div>
@@ -438,7 +438,7 @@
 
 
 <!--Start Who we are-->
-<div class="standart_div">
+<div class="standart_div" id="about">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -461,7 +461,7 @@
         <div class="row line_row">
             <div class="col-md-6 line_col">
                 <div class="block_information">
-                    <div class=" icon_in_block"></div>
+                    <div class=" icon_in_block increase"></div>
                     <h3 class="title">On time projets</h3>
 
                     <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem
@@ -471,7 +471,7 @@
             </div>
             <div class="col-md-6 line_col">
                 <div class="block_information">
-                    <div class=" icon_in_block"></div>
+                    <div class=" icon_in_block increase"></div>
                     <h3 class="title">Fully support</h3>
 
                     <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolor id
@@ -483,7 +483,7 @@
         <div class="row line_row">
             <div class="col-md-6 line_col">
                 <div class="block_information">
-                    <div class=" icon_in_block"></div>
+                    <div class=" icon_in_block increase"></div>
                     <h3 class="title">Professional experience</h3>
 
                     <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid
@@ -493,7 +493,7 @@
             </div>
             <div class="col-md-6 line_col">
                 <div class="block_information">
-                    <div class=" icon_in_block"></div>
+                    <div class=" icon_in_block increase"></div>
                     <h3 class="title">Communicative team</h3>
 
                     <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis culpa cumque
@@ -733,7 +733,7 @@
 <!--End scills-->
 
 <!--Start who love to work witn us-->
-<div class="standart standart_div">
+<div class="standart standart_div" id="clients">
     <div class="container">
         <div class="row">
             <div class="col-ms-12"></div>
@@ -858,7 +858,7 @@
     </div>
 </div>
 
-<div class="standart_div black">
+<div class="standart_div black" id="contact">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -916,6 +916,10 @@
 <script src="js/partner_slider.js"></script>
 <script src="js/dynamic_progress_circle.js"></script>
 <script src="js/button_for_dive.js"></script>
+<script src="js/scrolljQ.js"></script>
+<script src="js/Increase.js"></script>
+<script src="js/filter_gallery.js"></script>
+
 
 </body>
 </html>

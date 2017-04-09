@@ -5,7 +5,6 @@ var activDiv = document.getElementsByClassName("div_review")[0];
 var divs_target = document.getElementsByClassName("div_review");
 
 function createBtn(i) {
-    console.log(i);
     var btn = document.createElement("input");
     btn.setAttribute("type", "button");
     btn.setAttribute("name", i);
